@@ -1,0 +1,395 @@
+* {
+    -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+
+
+.card {
+    display: flex;
+    height: auto;
+    flex-direction: row;
+    align-items: stretch;
+    width: 100%;
+    max-width: 600px;
+    /* Prevents overflow */
+    overflow: hidden;
+    margin-right: 10px;
+    /* Add margin-right */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Add box-shadow */
+}
+
+.Image {
+    width: 40% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+}
+
+.card .MuiCardContent-root {
+    flex-grow: 1;
+    min-width: 0;
+    /* Prevents content from expanding beyond available space */
+}
+
+.card .MuiTypography-root {
+    font-size: 12px;
+    line-height: 1.2;
+}
+
+
+
+.CardsList {
+    scrollbar-width: 20px;
+    overflow-x: hidden;
+    height: 107vh;
+    /* height: auto; */
+    display: flex;
+    flex-direction: column;
+}
+
+.dashboard-content {
+    display: flex;
+    /* height: 100vh !important; */
+}
+
+.button-group-header {
+    border: 1px solid #325098 !important;
+}
+
+.button-group-header:active {
+    border: 1px solid #325098 !important;
+    background-color: #325098;
+    color: #fff
+}
+
+
+.icons {
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 10px;
+    font-size: 10px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    /* Allows icons to adjust dynamically */
+}
+
+@media only screen and (max-width: 600px) {
+    .HouseDetails {
+        margin-top: 20px !important;
+    }
+
+    .card {
+        height: 150px;
+    }
+
+    .Image {
+        width: 35% !important;
+        height: 100% !important;
+    }
+
+    .icons {
+        font-size: 8px;
+        gap: 8px;
+    }
+}
+
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .card {
+        height: 180px;
+    }
+
+    .CardsList {
+        scrollbar-width: 20px;
+        scrollbar-color: yellow;
+        overflow-x: hidden;
+        height: 107vh;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    .card {
+        height: 200px;
+    }
+}
+
+
+@media only screen and (max-width: 850px) {
+    .cardList {
+        display: none !important;
+    }
+
+    .nav-buttons {
+        display: none !important;
+    }
+}
+
+.MuiStack-root .css-1pyfj8b-MuiStack-root {
+    flex-wrap: wrap !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.Image {
+    object-fit: fill !important;
+}
+
+
+@media only screen and (max-width:770px) {
+    .Image {
+        height: 60% !important;
+    }
+
+    .text {
+        font-size: 8px !important;
+    }
+
+    .price {
+        font-size: 10px !important;
+    }
+
+    .icons {
+        font-size: 6px !important;
+    }
+
+    .CardsList {
+        scrollbar-width: 20px;
+        scrollbar-color: yellow;
+        overflow-x: hidden;
+        height: 115vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .CardsListContent {
+        scrollbar-width: 20px;
+        scrollbar-color: yellow;
+        overflow-x: auto;
+        height: 145vh !important;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width:800px) {
+    .CardsListContent {
+        scrollbar-width: 20px;
+        scrollbar-color: yellow;
+        overflow-x: auto;
+        height: 120vh !important;
+        display: flex;
+        flex-direction: column;
+
+    }
+}
+
+/* Large screens (laptop/desktop) */
+@media only screen and (min-width: 1025px) {
+    .card .MuiTypography-root {
+        font-size: 12px;
+    }
+
+    .icons {
+        font-size: 10px;
+        gap: 10px;
+    }
+}
+
+
+@media only screen and (max-width:800px) {
+    .priceTag {
+        display: none !important;
+    }
+
+}
+
+@media only screen and (min-width: 730px) and (max-width: 875px) {
+    .Image {
+        height: 150px !important;
+        width: 150px !important;
+    }
+
+    .card {
+        width: 350px;
+        height: 155px !important;
+        padding-right: 8px;
+        padding-left: 9px !important;
+    }
+
+    .icons {
+        font-size: 6px !important;
+        gap: 1px !important;
+    }
+
+    .text {
+        font-size: 8px !important;
+    }
+
+    .CardsListContent {
+        scrollbar-width: 20px;
+        scrollbar-color: yellow;
+        overflow-x: auto;
+        /* height: 100vh !important; */
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 729px) {
+    .Image {
+        height: fit-content !important;
+    }
+
+    .right-content {
+        grid-column: 12 !important;
+    }
+
+
+}
+
+@media only screen and (max-width: 599px) {
+    .right-content {
+        width: 100% !important;
+    }
+}
+
+
+
+@media only screen and (max-width: 599px) {
+    .Image {
+        height: 120px !important;
+        width: 35% !important;
+    }
+
+    .card {
+        height: auto !important;
+        min-height: 120px;
+    }
+
+    .locationText {
+        font-size: 6px !important;
+    }
+
+    .pricerange-button {
+        display: none !important;
+    }
+
+    .text-field {
+        display: none !important;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .card {
+        height: 200px !important;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .Image {
+        width: 35% !important;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+
+    /* Location text */
+    .card .MuiCardContent-root .MuiTypography-caption {
+        font-size: 8px !important;
+    }
+
+    /* Description text */
+    .text {
+        font-size: 9px !important;
+        line-height: 1.2 !important;
+        margin: 3px 0 !important;
+    }
+
+    /* Icons container */
+    .icons {
+        margin-top: 5px !important;
+        gap: 8px !important;
+    }
+
+    /* Individual icon labels */
+    .icons>div {
+        font-size: 8px !important;
+    }
+
+    /* Icon images */
+    .icons img {
+        width: 12px !important;
+        height: 12px !important;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+    .Image {
+        width: 38% !important;
+        height: 100% !important;
+    }
+}
+
+.card .MuiCardContent-root {
+    padding-bottom: 0 !important;
+}
+
+
+
+/* new */
+
+@media only screen and (max-width: 599px) {
+    .small-list-card-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .small-list-card {
+        width: 100% !important;
+        margin: 10px 0 !important;
+    }
+
+    .MuiCard-root {
+        width: 100% !important;
+    }
+}
+
+
+/* Default max-width for the small-list-card */
+.small-list-card-2 {
+    flex: 1 1 auto;
+    margin: 10px;
+    max-width: 100%;
+}
+
+/* Adjust max-width for screens larger than 600px */
+@media only screen and (min-width: 600px) {
+    .small-list-card-2 {
+        max-width: fit-content;
+    }
+}
+
+/* Adjust max-width for screens larger than 900px */
+@media only screen and (min-width: 900px) {
+    .small-list-card-2 {
+        max-width: 40% !important;
+    }
+}
+
+/* Adjust max-width for screens larger than 1200px */
+@media only screen and (min-width: 1200px) {
+    .small-list-card-2 {
+        max-width: 22% !important;
+    }
+}
